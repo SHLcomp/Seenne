@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--primay-color);
+}
+/* variables */
+:root{
+    --primay-color: #FFF2EB;
+    --secondary-color: #FFD9A1;
+    --10-color: #FF9A6F;
+    --font-color: #FF9A6F;
+    --third-color: #DBF58E;
+    --forth-color:  #E3CADE;
+}
+/* shared css */
+.a{
+    color: black !important;
+    transition: .3s ease;
+}
+.a:hover{
+    color: var(--font-color) !important;
+}
+/* header */
+nav{
+    display: flex !important;
+    justify-content: flex-end !important;
+    width: 100% !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--primay-color);
+    transition: .1s ease;
+}
+.box-shadow{
+    box-shadow: 3px 4px 12px;
+}
+.navbar-nav{
+    display: flex;
+    align-items: flex-end !important;
+    justify-content: right !important;
+    width: 100%;
+}
+.navbar-brand{
+    font-size: 2.4rem;
+    color: var(--10-color) !important;
+    filter: drop-shadow(7px 7px 14px);
+    font-weight: 800;
+    font-family: 'Raleway';
+}
+.signup-btn{
+    background-color: var(--10-color);
+    border-radius: 40px;
+    transition: .5s ease;
+}
+.signup-btn:hover{
+    transform: scale(1.1);
+}
+.signup-btn .a:hover{
+    color: white !important;
+}
+/* lang dropdown */
+.lang-options-div .dropdown-menu{
+    background-color: var(--primay-color);
+    width: 10px !important;
+}
+.dropdown-item:hover{
+    background-color: var(--primay-color);
+    color: var(--10-color);
+}
+/* 2nd section */
+/* header */
+
+.profile-circle img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.section2{
+    margin-top: 3cm !important;
+    background-color: var(--secondary-color);
+    display: flex;
+    box-shadow: 2px 2px 20px;
+    margin-top: 1cm;
+    width: 100%;
+}
+.section2-img{
+    width: 65%;
+    float: right;
+    filter: drop-shadow(3px 4px 12px);
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1cm;
+}
+.text h1{
+    width: 100%;
+    text-align: center;
+    font-family: 'Raleway';
+}
+.text .start-btn{
+    background-color: var(--10-color);
+    padding-inline: 40px;
+    box-shadow: 1px 0px 8px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .4s ease;
+}
+.start-btn:hover{
+    transform: scale(1.01);
+}
+
+/* start page */
+.section-all{
+    display: flex;
+}
+.main-section{
+    width: 80%;
+}
+
+
+
+/* sec section */
+.sec-section{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 20%;
+    box-shadow: 2px 2px 12px;
+    margin-left: -15px !important;
+    padding-left: 10px;
+}
+.bars{
+    display: none !important;
+}
+.xmark{
+    display: none !important;
+}
+.sec-section h1{
+    color: var(--font-color);
+}
+.first-div .first ul li{
+    list-style: none;
+}
+.second-div .second ul li{
+    list-style: none;
+}
+.first-div .first ul li a{
+    position: absolute;
+    left: 30px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.second-div .second ul li a{
+    position: absolute;
+    left: 30px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.first-div .first ul li a:hover{
+    text-decoration: none;
+}
+.second-div .second ul li a:hover{
+    text-decoration: none;
+}
+/* search input */
+.header{
+    padding-block: 30px;
+    display: flex;
+    width: 100% !important;
+    flex-direction: row;
+}
+.header .search-input i input{
+    border-radius: 10px;
+    outline: none;
+    border-color: transparent;
+    background-color: var(--primay-color);
+    padding: 5px;
+    margin-left: 10px;
+}
+.header .search-input i{
+    width: auto;
+    align-items: center;
+    cursor: pointer;
+}
+/* profile */
+.profile-container{
+    margin-left: auto;
+    display: flex;
+}
+.prof-pic-circ{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(../assets/girl.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid black;
+    cursor: pointer;
+}
+/* lang dropdown */
+.profile-container .lang-options-div{
+    list-style: none;
+}
+.profile-container .lang-options-div{
+    list-style: none;
+}
+/* cards */
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding-bottom: 1cm;
+    border-bottom: 4px solid var(--secondary-color);
+}
+.cards{
+    gap: 20px;
+    padding-inline: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-block: 10px;    
+    display: flex;
+}
+.card-item{
+    box-shadow: 2px 3px 8px;
+    border-radius: 10px !important;
+    min-height: 244px;
+    min-width: 210px;
+}
+.card-item h4{
+    color: var(--secondary-color);
+}
+.card-item h5{
+    font-weight: 400;
+}
+.card-item p{
+    font-weight: 100;
+}
+.go-to-course{
+    background-color: var(--10-color);
+    color: white;
+    transition: .5s ease;
+    position: absolute;
+    top: 75%;
+}
+.go-to-course:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 1px 4px;
+    color: white;
+}
+/* 2 to do and track prog */
+.todo-track-con{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* to do list */
+.to-do-list{
+    background-color: var(--forth-color);
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px;
+    min-height: 240px !important;
+    max-height: 700px;
+    position: relative;
+    overflow: visible;
+}
+.toDoList-container{
+    display: flex;
+    margin: 10px;
+    width: 40% !important;
+}
+.tasks{
+    gap: 10px !important;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: none;
+    max-height: 370px;
+    padding-inline: 10px;
+    padding-bottom: 2px;
+}
+.tasks .no-tasks-msg{
+    text-align: center;
+    width: 100%;
+    margin-top: 1cm;
+}
+.task{
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    box-shadow: 2px 3px 2px;
+    border-radius: 10px;
+    background-color: white;
+}
+.task h3{
+    font-weight: 700;
+    color: var(--secondary-color);
+    overflow-x: auto;
+    scrollbar-width: none;
+    font-size: 20px;
+    width: 300% !important;
+}
+.task-info-cont{
+    display: flex;
+    align-items: flex-end !important;
+    justify-content: right !important;
+    width: 100%;
+    gap: 10px;
+    cursor: pointer;
+}
+.delete-icon{
+    margin-left: 30px !important;
+}
+.add-task{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--10-color);
+    color: white;
+    outline: none;
+}
+.add-task:hover{
+    color: white;
+}
+.task-info-cont span{
+    cursor: pointer;
+}
+
+
+
+/* track */
+.track-progress{
+    background-color: var(--third-color);
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px;
+    padding-bottom: 20px;
+}
+.track-progress .track{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    min-width: 210px;
+    min-height: 200px;
+    border-radius: 8px;
+    max-width: 240px;
+    box-shadow: 2px 3px 12px;
+    
+}
+.track h3{
+    color: var(--font-color);
+    padding-top: 10px;
+}
+
+.redo-btn{
+    background-color: var(--10-color);
+    position: absolute;
+    top: 75%;
+    transition: .4s ease;
+    color: white;
+}
+.redo-btn:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 1px 4px;
+    color: white;
+}
